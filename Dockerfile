@@ -6,6 +6,7 @@ RUN echo "http://nl.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositorie
 
 COPY keepalived.sh /usr/bin/keepalived.sh
 COPY keepalived.conf /etc/keepalived/keepalived.conf
+COPY haproxy.conf /etc/haproxy/haproxy.cfg
 
 RUN chmod +x /usr/bin/keepalived.sh
 #ENV VIRTUAL_IP 172.19.8.150
